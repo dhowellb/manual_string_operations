@@ -17,3 +17,20 @@ def remove_target_suffix(target_string, suffix_string):
         
     # Kung hindi nag-match, ibalik lang yung original na string
     return target_string
+# Function para i-test at patakbuhin yung ginawa nating logic sa taas
+def main_execution():
+    # Mag-set ng test string (halimbawa, pangalan ng Python file mo)
+    test_string = "developer.py"
+    # Ito yung file extension na gusto nating tanggalin
+    target_suffix = ".py"
+    
+    # Ipasa yung data dun sa custom function at i-save ang resulta
+    result_string = remove_target_suffix(test_string, target_suffix)
+    
+    # I-print ang original string at yung malinis na resulta (wala nang .py)
+    print("\033[96mOriginal:\033[0m '" + test_string + "'")
+    print("\033[92mResult:\033[0m   '" + result_string + "'")
+
+# Ito yung magsisilbing switch para umandar yung script
+if __name__ == "__main__":
+    main_execution()
