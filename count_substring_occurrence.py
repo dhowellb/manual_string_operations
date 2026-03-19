@@ -21,3 +21,19 @@ def count_substring_occurrence(target_string, substring_target):
             occurrence_count = occurrence_count + 1
             
     return occurrence_count
+# Function para i-test at patakbuhin yung ginawa nating logic sa taas
+def main_execution():
+    # Mag-set ng test string at yung part na gusto nating bilangin
+    test_string = "banana"
+    target_substring = "na"
+    
+    # Ipasa yung data dun sa custom function at i-save ang final count
+    total_count = count_substring_occurrence(test_string, target_substring)
+    
+    # I-print ang original string at kung ilang beses nakita yung target
+    print("\033[96mString:\033[0m '" + test_string + "'")
+    print("\033[92mCount of target:\033[0m " + str(total_count))
+
+# Ito yung magsisilbing switch para umandar yung script
+if __name__ == "__main__":
+    main_execution()
