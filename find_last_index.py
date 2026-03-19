@@ -25,3 +25,19 @@ def find_last_index(target_string, substring_target):
         
     # Ibalik kung saan huling nakita
     return last_found_index
+# Function para i-test at patakbuhin yung ginawa nating logic sa taas
+def main_execution():
+    # Mag-set ng test string at yung letrang gusto nating hanapin
+    test_string = "banana"
+    target_substring = "a"
+    
+    # Ipasa yung data dun sa custom function at i-save ang huling index na nahanap
+    last_index = find_last_index(test_string, target_substring)
+    
+    # I-print ang original string at kung saang index siya huling lumabas
+    print("\033[96mString:\033[0m '" + test_string + "'")
+    print("\033[92mLast index of target:\033[0m " + str(last_index))
+
+# Ito yung magsisilbing switch para umandar yung script
+if __name__ == "__main__":
+    main_execution()
