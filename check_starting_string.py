@@ -16,3 +16,19 @@ def check_starting_string(target_string, prefix_string):
         
     # Kung hindi nag-match, ibalik ang False
     return False
+# Function para i-test at patakbuhin yung ginawa nating logic sa taas
+def main_execution():
+    # Mag-set ng test string at yung salitang gusto nating hanapin sa simula
+    test_string = "computer engineering"
+    target_prefix = "computer"
+    
+    # Ipasa yung data dun sa custom function at i-save ang True/False na resulta
+    is_match = check_starting_string(test_string, target_prefix)
+    
+    # I-print ang original string at kung nag-match ba yung target prefix
+    print("\033[96mString:\033[0m '" + test_string + "'")
+    print("\033[92mStarts with target:\033[0m " + str(is_match))
+
+# Ito yung magsisilbing switch para umandar yung script
+if __name__ == "__main__":
+    main_execution()
