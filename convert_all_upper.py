@@ -21,3 +21,18 @@ def convert_all_upper(target_string):
             result_string = result_string + character
             
     return result_string
+# Function para i-test at patakbuhin yung ginawa nating logic sa taas
+def main_execution():
+    # Mag-set ng test string na naka-lowercase
+    test_string = "python programming"
+    
+    # Ipasa yung string sa custom function natin para ma-convert
+    result_string = convert_all_upper(test_string)
+    
+    # I-print ang pinagkaiba ng original at yung naka-all caps na string
+    print("\033[96mOriginal:\033[0m '" + test_string + "'")
+    print("\033[92mResult:\033[0m   '" + result_string + "'")
+
+# Ito yung magsisilbing switch para umandar yung script
+if __name__ == "__main__":
+    main_execution()
