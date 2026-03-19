@@ -19,3 +19,19 @@ def find_first_index(target_string, substring_target):
             
     # Kung natapos ang buong loop at walang nag-match, sabihing hindi nahanap
     return "substring not found"
+# Function para i-test at patakbuhin yung ginawa nating logic sa taas
+def main_execution():
+    # Mag-set ng test string at yung salitang gusto nating alamin ang pwesto
+    test_string = "hello world"
+    target_substring = "world"
+    
+    # Ipasa yung data dun sa custom function at i-save ang index na nahanap
+    first_index = find_first_index(test_string, target_substring)
+    
+    # I-print ang original string at kung saang index nagsimula yung target
+    print("\033[96mString:\033[0m '" + test_string + "'")
+    print("\033[92mIndex of target:\033[0m " + str(first_index))
+
+# Ito yung magsisilbing switch para umandar yung script
+if __name__ == "__main__":
+    main_execution()
